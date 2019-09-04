@@ -1,0 +1,7 @@
+C:\Users\Galdamez\Documents\Programación Estructurada\Práctica_Núm4\Práctica_Núm4\bin\Debug\Práctica_Núm4.exe.config
+C:\Users\Galdamez\Documents\Programación Estructurada\Práctica_Núm4\Práctica_Núm4\bin\Debug\Práctica_Núm4.exe
+C:\Users\Galdamez\Documents\Programación Estructurada\Práctica_Núm4\Práctica_Núm4\bin\Debug\Práctica_Núm4.pdb
+C:\Users\Galdamez\Documents\Programación Estructurada\Práctica_Núm4\Práctica_Núm4\obj\Debug\Práctica_Núm4.csprojAssemblyReference.cache
+C:\Users\Galdamez\Documents\Programación Estructurada\Práctica_Núm4\Práctica_Núm4\obj\Debug\Práctica_Núm4.csproj.CoreCompileInputs.cache
+C:\Users\Galdamez\Documents\Programación Estructurada\Práctica_Núm4\Práctica_Núm4\obj\Debug\Práctica_Núm4.exe
+C:\Users\Galdamez\Documents\Programación Estructurada\Práctica_Núm4\Práctica_Núm4\obj\Debug\Práctica_Núm4.pdb
