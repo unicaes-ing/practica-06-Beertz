@@ -18,36 +18,68 @@ namespace Práctica__Núm._6.Ejercicios
             Console.Write("\nEliga la figura con cual se hará la grafica " +
             "(Deje en blanco para usar la figura premeditada): ");
             string figura = Console.ReadLine();
-            Console.WriteLine("\n---Escriba las coordenadas para mostrar su figura en ellas (Deje en blanco para no colocar coordenadas): ");
+            Console.WriteLine("\n---Escriba las coordenadas para mostrar su figura en ellas (Escriba 0 para dejar las coordenadas de predeterminadas): ");
             Console.Write("X: ");
-
+            int X = Convert.ToInt32(Console.ReadLine());
             Console.Write("Y: ");
+            int Y = Convert.ToInt32(Console.ReadLine());
 
-
-            if (figura == "")
+            if (X == 0 && Y == 0)
             {
-                Console.WriteLine("\n---Su Figura-----\n");
-                for (int cuentaLineas = 1; cuentaLineas <= altoMain; cuentaLineas++)
-                {
 
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(Dibujar(anchoMain));
+                if (figura == "")
+                {
+                    Console.WriteLine("\n---Su Figura-----\n");
+                    for (int cuentaLineas = 1; cuentaLineas <= altoMain; cuentaLineas++)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(Dibujar(anchoMain));
+                    }
+                    Console.ReadKey();
                 }
-                Console.ReadKey();
+                else
+                {
+                    //Se le otorgan las variables
+                    Console.WriteLine("\n---Su Figura-----\n");
+                    for (int cuentaLineas = 1; cuentaLineas <= altoMain; cuentaLineas++)
+                    {
+                        
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine(Dibujar(anchoMain, figura));
+                    }
+                    Console.ReadKey();
+                }
+
             }
-            else
+            
+            if(X > 0 && Y >0)
             {
-                //Se le otorgan las variables
-                Console.WriteLine("\n---Su Figura-----\n");
-                for (int cuentaLineas = 1; cuentaLineas <= altoMain; cuentaLineas++)
+                if (figura == "")
                 {
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine(Dibujar(anchoMain, figura));
+                    Console.WriteLine("\n---Su Figura-----\n");
+                    for (int cuentaLineas = 1; cuentaLineas <= altoMain; cuentaLineas++)
+                    {
+                        Console.Clear();
+                        Console.SetCursorPosition(X, Y);
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(Dibujar(anchoMain));
+                    }
+                    Console.ReadKey();
                 }
-                Console.ReadKey();
+                else
+                {
+                    //Se le otorgan las variables
+                    Console.WriteLine("\n---Su Figura-----\n");
+                    for (int cuentaLineas = 1; cuentaLineas <= altoMain; cuentaLineas++)
+                    {
+                        Console.Clear();
+                        Console.SetCursorPosition(X, Y);
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine(Dibujar(anchoMain, figura));
+                    }
+                    Console.ReadKey();
+                }
             }
-
-
         }
 
         public static string Dibujar(decimal figura)
