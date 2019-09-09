@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Práctica__Núm._6
 {
+    //Alberto Galdámez | 06-09-2019
     class Ejercicio1
     {
         static void Main(string[] args)
