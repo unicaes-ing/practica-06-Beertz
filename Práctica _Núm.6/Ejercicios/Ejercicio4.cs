@@ -17,8 +17,8 @@ namespace Práctica__Núm._6.Ejercicios
         public static string Cadena(decimal numeroBase)
         {
             string cadenaCompletada = "";
-            for (int num = 0; num <= 2; num++)
             {
+
                 if (numeroBase % 2 == 0)
                 {
                     cadenaCompletada = cadenaCompletada + "0";
@@ -28,8 +28,9 @@ namespace Práctica__Núm._6.Ejercicios
                 {
                     cadenaCompletada = cadenaCompletada + "1";
                 }
+                
+                return cadenaCompletada;
             }
-            return cadenaCompletada;
         }
     }
 }
