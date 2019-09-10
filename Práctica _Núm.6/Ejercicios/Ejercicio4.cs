@@ -32,16 +32,21 @@ namespace Práctica__Núm._6.Ejercicios
 
         public static string Binario(decimal numeroEntrada)
         {
-            string cadena = "";
-            if(numeroEntrada %2 == 0)
+            string cadena = "Su respuesta es: ";
+            for (int inicio = 0; inicio <= numeroEntrada; inicio++)
             {
-                cadena = cadena + "0";
+                numeroEntrada = numeroEntrada / 2;
+                if (numeroEntrada % 2 == 0)
+                {
+                    cadena = cadena + "0";
 
-            }
-            else
-            {
+                }
+                else
+                {
 
-                cadena = cadena + "0";
+                    cadena = cadena + "1";
+                }
+                
             }
             return cadena;
         }
