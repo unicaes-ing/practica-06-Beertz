@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Práctica__Núm._6.Ejercicio1</StartupObject>
+    <StartupObject>Práctica__Núm._6.Ejercicios.Ejercicio3</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

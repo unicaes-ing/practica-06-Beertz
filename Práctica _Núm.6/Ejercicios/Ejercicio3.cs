@@ -7,33 +7,21 @@ namespace Práctica__Núm._6.Ejercicios
         //Alberto Galdámez | 09-09-2019
         static void Main(string[] args)
         {
-            Console.Write("Escriba la base: ");
-            int basePrincipal = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Escriba el Exponente de la base: {0}^", basePrincipal);
-            int exponente = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(Exponente(basePrincipal, exponente));
+            Console.Write("[Escriba el numero base]: ");
+            int numBase = Convert.ToInt32(Console.ReadLine());
+            Console.Write("[Escriba el exponente del numero base]: {0}^", numBase);
+            int numExponente = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(DevolverR(numBase, numExponente));
 
             Console.ReadKey();
         }
 
-        public static string Exponente(int basePrincipal, int exponentee)
+        public static string DevolverR(int numBase, int numExponente)
         {
-            int final = exponentee;
-            string respuestaFinal = "";
-            int proceso = 0;
-            for(int inicio = 0; inicio <= final; inicio++)
-            {
-
-                proceso = basePrincipal * basePrincipal;
-
-
-            }
-
-            respuestaFinal = "Su respuesta es: " + proceso;
-            return respuestaFinal;
-
+            string resultado = "";
+            double resultadoFinal = Math.Pow(numBase, numBase);
+            resultado = "Su resultado es: " + resultadoFinal;
+            return resultado;
         }
-
-
     }
 }

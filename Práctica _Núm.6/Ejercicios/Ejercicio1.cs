@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace Práctica__Núm._6
 {
     //Alberto Galdámez | 06-09-2019
@@ -12,7 +11,7 @@ namespace Práctica__Núm._6
             int numTabla = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("---Color de Tabla----");
             Console.WriteLine("[1] Rojo");
-            Console.WriteLine("[2] Azul");
+            Console.WriteLine("[2] Azul"); 
             Console.WriteLine("[3] Verde");
             Console.WriteLine("[4] Amarillo");
             Console.Write("Elija el color de la tabla (Presione solo [Enter] para elegir el color pre-establecido: ");
@@ -58,7 +57,7 @@ namespace Práctica__Núm._6
             int num2 = numeroTabla;
             int final = 0;
 
-            //Tatattaattatataat
+            //Selecciona color.
             switch (Color)
             {
                 case 1:
