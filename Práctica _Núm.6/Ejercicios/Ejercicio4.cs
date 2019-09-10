@@ -7,30 +7,43 @@ namespace Práctica__Núm._6.Ejercicios
     {
         static void Main(string[] args)
         {
-            Console.Write("Escriba un numero decimal: ");
-            decimal enterNumero = Convert.ToDecimal(Console.ReadLine());
-            Console.Write("Su respuesta: ");
-            Console.Write(Cadena(enterNumero));
-            Console.ReadKey();
+        paso1:
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("----{Conversor de Decimal a Binario}----");
+            Console.Write("Escriba el numero que se convertirá: ");
+            if (decimal.TryParse(Console.ReadLine(), out decimal numeroEntrada))
+            {
+                Console.WriteLine(Binario(numeroEntrada));
+                Console.ReadKey();
+
+
+            }
+
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Dato invalido");
+                Console.ReadKey();
+                goto paso1;
+            }
+
         }
 
-        public static string Cadena(decimal numeroBase)
+        public static string Binario(decimal numeroEntrada)
         {
-            string cadenaCompletada = "";
+            string cadena = "";
+            if(numeroEntrada %2 == 0)
+            {
+                cadena = cadena + "0";
+
+            }
+            else
             {
 
-                if (numeroBase % 2 == 0)
-                {
-                    cadenaCompletada = cadenaCompletada + "0";
-
-                }
-                else
-                {
-                    cadenaCompletada = cadenaCompletada + "1";
-                }
-                
-                return cadenaCompletada;
+                cadena = cadena + "0";
             }
+            return cadena;
         }
     }
 }
